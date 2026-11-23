@@ -1,0 +1,8 @@
+# Canonical 301 redirects for legacy routes
+/it-services    /it-services/custom-software  301
+/services       /it-services/custom-software  301
+/hiring         /hiring/permanent-recruitment 301
+/resources      /case-studies                 301
+
+# Single Page Application catch-all route
+/*              /index.html                   200

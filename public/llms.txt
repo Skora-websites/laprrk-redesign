@@ -1,0 +1,67 @@
+# Laprrk Technology Solutions
+
+> Laprrk Technology Solutions LLP is an enterprise IT services, practitioner recruitment, and corporate technical training firm founded in 2019, with delivery operations in Greater Noida (India) and client coordination in Louisville, Kentucky (USA).
+
+## Company Overview
+- [Home](https://laprrk.com/): Core platform overview, practice breakdown (Build, Hire, Train), delivery standards, and verified figures.
+- [About](https://laprrk.com/about): Mission, leadership, delivery models, engineering values, and twin-hub presence.
+- [Contact](https://laprrk.com/contact): Direct engineering desk contact, office locations, phone numbers, and WhatsApp consultation booking.
+- [Case Studies](https://laprrk.com/case-studies): Anonymized enterprise outcomes across GCC buildouts, cloud migrations, legacy modernizations, and corporate upskilling cohorts.
+
+## IT Services & Custom Engineering
+Engineering pods delivering domain-driven backend architectures, fullstack applications, cloud infrastructure, and AI systems in two-week sprint cadences with 100% client IP and repository ownership.
+- [Custom Software Development](https://laprrk.com/it-services/custom-software): Scalable architectures, microservices, and modular monoliths.
+- [Web Application Development](https://laprrk.com/it-services/web-application-development): Enterprise SPAs, reactive frontends, and accessible interfaces.
+- [Mobile App Development](https://laprrk.com/it-services/mobile-app-development): Native and cross-platform mobile solutions for iOS and Android.
+- [Enterprise Architecture](https://laprrk.com/it-services/enterprise-architecture): Distributed systems design, domain modeling, and technical governance.
+- [Cloud Architecture & Migration](https://laprrk.com/it-services/cloud-architecture-migration): AWS, Azure, and GCP cloud-native refactoring and migration.
+- [DevOps & CI/CD Pipelines](https://laprrk.com/it-services/devops-ci-cd-pipelines): Automated deployment pipelines, infrastructure as code (IaC), and containerization.
+- [Data Engineering & Big Data](https://laprrk.com/it-services/data-engineering-big-data): Real-time streaming, Lakehouse architectures, and analytics pipelines.
+- [AI & Machine Learning](https://laprrk.com/it-services/ai-machine-learning): Custom ML models, predictive inference, and enterprise LLM integrations.
+- [Generative AI Integration](https://laprrk.com/it-services/generative-ai-integration): Retrieval-Augmented Generation (RAG) pipelines, model routing, and agentic workflows.
+- [Legacy Modernization](https://laprrk.com/it-services/legacy-modernization): Incremental strangler-fig refactoring of legacy codebases.
+- [API Design & Integration](https://laprrk.com/it-services/api-design-integration): High-throughput REST and GraphQL interfaces with rate-limiting.
+- [Cybersecurity Consulting](https://laprrk.com/it-services/cybersecurity-consulting): Threat modeling, vulnerability assessments, and secure coding practices.
+- [QA & Automated Testing](https://laprrk.com/it-services/qa-automated-testing): Unit, integration, E2E test suites with high coverage gates.
+- [UI/UX Design Systems](https://laprrk.com/it-services/ui-ux-design-systems): Accessible design tokens, component libraries, and interactive design.
+- [Microservices Architecture](https://laprrk.com/it-services/microservices-architecture): Event-driven messaging, decoupled domains, and service meshes.
+- [IoT & Embedded Solutions](https://laprrk.com/it-services/iot-embedded-solutions): Edge computing, telemetry ingest, and IoT device networks.
+- [Blockchain Development](https://laprrk.com/it-services/blockchain-development): Smart contracts, verifiable ledger systems, and Web3 integrations.
+- [IT Infrastructure Management](https://laprrk.com/it-services/it-infrastructure-management): 24/7 monitoring, incident response, and SLA management.
+- [Database Performance](https://laprrk.com/it-services/database-performance-tuning): Query optimization, index refactoring, and connection pooling.
+- [Technical Debt Remediation](https://laprrk.com/it-services/technical-debt-remediation): Static analysis, architectural refactoring, and codebase stabilization.
+
+## IT Hiring & Technical Recruitment
+Senior technical talent screened by active engineers. First shortlist in 5–7 business days, 88% offer-to-join ratio, 90-day replacement guarantee.
+- [Permanent IT Recruitment](https://laprrk.com/hiring/permanent-recruitment): Full-time software engineers and tech leads screened through hands-on technical assessments.
+- [Contract Staffing](https://laprrk.com/hiring/contract-staffing): Rapidly deployable contractor engineers for urgent sprint deliveries and surge capacity.
+- [Executive Search](https://laprrk.com/hiring/executive-search): CTO, VP of Engineering, and technical director search for high-growth firms.
+- [GCC Team Building](https://laprrk.com/hiring/gcc-team-building): End-to-end Global Capability Centre incubation in India (scale: 40+ engineers placed).
+- [Remote Engineering Pods](https://laprrk.com/hiring/remote-engineering-pods): Autonomous, fullstack pods managed with daily standups and transparent telemetry.
+- [Technical Assessment](https://laprrk.com/hiring/technical-assessment): Practitioner code reviews and system design evaluations filtering out resume inflation.
+
+## Corporate Technical Training
+Practitioner-led engineering upskilling cohorts with ~70% hands-on lab time, customized syllabus, enterprise delivery, and ~38% average assessment improvement.
+- [Corporate Training Overview](https://laprrk.com/training): Program structure, corporate lab setup, and delivery cadences (up to 120 engineers per cohort).
+- [Generative AI & Agentic AI](https://laprrk.com/training/generative-ai-agentic-ai): LangGraph agentic workflows, production RAG pipelines, and vector databases.
+- [Full-Stack Web Development](https://laprrk.com/training/full-stack-web-development): Modern React, TypeScript, Node.js, and cloud backend engineering.
+- [Data Engineering & Big Data](https://laprrk.com/training/data-engineering-big-data): Apache Spark, Kafka streaming, and modern data stack architecture.
+- [Cloud & DevOps Certification](https://laprrk.com/training/cloud-devops-cert): Kubernetes orchestration, Docker pipelines, and Terraform IaC.
+- [Cybersecurity Engineering](https://laprrk.com/training/cybersecurity-cert): Defensive security, OWASP Top 10 remediation, and incident response.
+
+## Key Facts & Operational Metrics
+- Founded: 2019
+- Clients Served: 50+ enterprise and mid-market organizations
+- Professionals Placed: 200+ vetted engineers
+- Engineers Trained: 500+ corporate professionals
+- Time to Shortlist: 5–7 business days
+- Sprint Delivery: Two-week sprint cadence with live demonstrations
+- Lab Proportion: ~70% hands-on lab time in all training cohorts
+- Legal Entity: Laprrk Technology Solutions LLP
+- Offices: Greater Noida West, Uttar Pradesh (India) and Louisville, Kentucky (USA)
+
+## Optional & Legal Policies
+- [Privacy Policy](https://laprrk.com/privacy-policy.html): Complete disclosure on zero on-site database storage, DPDP Act 2023, GDPR, and grievance officer details.
+- [Terms of Service](https://laprrk.com/terms.html): Commercial terms, 100% client IP transfer, and acceptable use policy.
+- [Blog & Insights](https://laprrk.com/blog): Technical articles on system architecture, recruitment benchmarks, and engineering education.
+

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <clipPath id="av1-circle"><circle cx="24" cy="24" r="24" /></clipPath>
+    <radialGradient id="av1-bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#dce8f5" />
+      <stop offset="100%" stop-color="#b4cbe5" />
+    </radialGradient>
+    <radialGradient id="av1-skin" cx="45%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="65%" stop-color="#fba876" />
+      <stop offset="100%" stop-color="#d97706" />
+    </radialGradient>
+    <linearGradient id="av1-hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#374151" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="av1-shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#av1-circle)">
+    <rect width="48" height="48" fill="url(#av1-bg)" />
+    <!-- Shoulders / Suit -->
+    <path d="M7 48 C 7 36, 15 32, 24 32 C 33 32, 41 36, 41 48 Z" fill="url(#av1-shirt)" />
+    <!-- White collar -->
+    <path d="M19 32 L 24 38 L 29 32 Z" fill="#ffffff" opacity="0.9" />
+    <!-- Neck -->
+    <path d="M20 26 H 28 V 34 H 20 Z" fill="#fba876" />
+    <!-- Head / Face -->
+    <ellipse cx="24" cy="20" rx="9" ry="11" fill="url(#av1-skin)" />
+    <!-- Hair -->
+    <path d="M15 17 C 15 11, 18 8, 24 8 C 30 8, 33 11, 33 17 C 32 12, 29 10, 24 10 C 18 10, 16 13, 15 17 Z" fill="url(#av1-hair)" />
+    <!-- Ears -->
+    <circle cx="15" cy="20" r="2" fill="#fba876" />
+    <circle cx="33" cy="20" r="2" fill="#fba876" />
+    <!-- Eyes -->
+    <ellipse cx="20.5" cy="19.5" rx="1.2" ry="1.4" fill="#1f2937" />
+    <ellipse cx="27.5" cy="19.5" rx="1.2" ry="1.4" fill="#1f2937" />
+    <circle cx="21" cy="19" r="0.4" fill="#ffffff" />
+    <circle cx="28" cy="19" r="0.4" fill="#ffffff" />
+    <!-- Eyebrows -->
+    <path d="M19 17 C 20.5 16.5, 22 17, 22 17" stroke="#1f2937" stroke-width="0.9" stroke-linecap="round" fill="none" />
+    <path d="M26 17 C 27 16.5, 29 17, 29 17" stroke="#1f2937" stroke-width="0.9" stroke-linecap="round" fill="none" />
+    <!-- Nose -->
+    <path d="M24 19 V 23 H 25" stroke="#ea580c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.75" />
+    <!-- Smile -->
+    <path d="M21.5 25 C 22.5 26.5, 25.5 26.5, 26.5 25" stroke="#9a3412" stroke-width="1.1" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

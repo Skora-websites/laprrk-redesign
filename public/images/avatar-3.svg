@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <clipPath id="av3-circle"><circle cx="24" cy="24" r="24" /></clipPath>
+    <radialGradient id="av3-bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </radialGradient>
+    <radialGradient id="av3-skin" cx="45%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="65%" stop-color="#fba876" />
+      <stop offset="100%" stop-color="#c27845" />
+    </radialGradient>
+    <linearGradient id="av3-hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#1c0a00" />
+    </linearGradient>
+    <linearGradient id="av3-shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#av3-circle)">
+    <rect width="48" height="48" fill="url(#av3-bg)" />
+    <!-- Ponytail top knot -->
+    <circle cx="24" cy="7" r="4.2" fill="url(#av3-hair)" />
+    <!-- Shoulders / Blouse -->
+    <path d="M8 48 C 8 36, 15 32, 24 32 C 33 32, 40 36, 40 48 Z" fill="url(#av3-shirt)" />
+    <!-- V-neck -->
+    <path d="M21 32 L 24 37 L 27 32 Z" fill="#fed7aa" />
+    <!-- Neck -->
+    <path d="M21 26 H 27 V 33 H 21 Z" fill="#fba876" />
+    <!-- Head / Face -->
+    <ellipse cx="24" cy="20" rx="8.5" ry="10.5" fill="url(#av3-skin)" />
+    <!-- Hair pulled back -->
+    <path d="M15.5 17 C 15.5 11, 18.5 8, 24 8 C 29.5 8, 32.5 11, 32.5 17 C 31 12.5, 28 10, 24 10 C 20 10, 17 12.5, 15.5 17 Z" fill="url(#av3-hair)" />
+    <!-- Side hair strands -->
+    <path d="M15.5 16 C 15 20, 16 23, 16.5 24" stroke="url(#av3-hair)" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M32.5 16 C 33 20, 32 23, 31.5 24" stroke="url(#av3-hair)" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Ears & earrings -->
+    <circle cx="15.5" cy="20" r="1.8" fill="#fba876" />
+    <circle cx="32.5" cy="20" r="1.8" fill="#fba876" />
+    <circle cx="15.2" cy="22" r="0.8" fill="#14b8a6" />
+    <circle cx="32.8" cy="22" r="0.8" fill="#14b8a6" />
+    <!-- Eyes -->
+    <ellipse cx="20.8" cy="19.5" rx="1.2" ry="1.3" fill="#1c1917" />
+    <ellipse cx="27.2" cy="19.5" rx="1.2" ry="1.3" fill="#1c1917" />
+    <circle cx="21.2" cy="19.1" r="0.4" fill="#ffffff" />
+    <circle cx="27.6" cy="19.1" r="0.4" fill="#ffffff" />
+    <!-- Eyebrows -->
+    <path d="M19.2 17.2 C 20.5 16.6, 22 17, 22 17" stroke="#451a03" stroke-width="0.95" stroke-linecap="round" fill="none" />
+    <path d="M26 17 C 26 17, 27.5 16.6, 28.8 17.2" stroke="#451a03" stroke-width="0.95" stroke-linecap="round" fill="none" />
+    <!-- Nose -->
+    <path d="M24 19 V 22.8 H 24.8" stroke="#b45309" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85" />
+    <!-- Smile -->
+    <path d="M21.5 24.8 C 22.5 26.2, 25.5 26.2, 26.5 24.8" stroke="#991b1b" stroke-width="1.1" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
