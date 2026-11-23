@@ -3,6 +3,7 @@ import { Link } from "../router";
 import { useBooking } from "../booking";
 import HeroBackdrop from "./HeroBackdrop";
 import FlowButton from "./ui/flow-button";
+import PixelatedHeadline from "./ui/PixelatedHeadline";
 
 const INTRO_KEY = "laprrk.intro.seen";
 
@@ -99,19 +100,11 @@ export default function Hero({ screenshotSrc = null }) {
         <div className="hero-shell">
           <div className="hero-layout">
                 <div className="hero-copy">
-                  <h1 className="hero-title" id="hero-title">
-                    <span className="hero-line" style={{ "--i": 0 }}>
-                      <span className="hero-line-inner">Software built.</span>
-                    </span>
-                    <span className="hero-line" style={{ "--i": 1 }}>
-                      <span className="hero-line-inner">Engineers placed.</span>
-                    </span>
-                    <span className="hero-line" style={{ "--i": 2 }}>
-                      <span className="hero-line-inner">
-                        Teams trained.
-                      </span>
-                    </span>
-                  </h1>
+                  <PixelatedHeadline as="h1" className="hero-title" id="hero-title" delay={introRun ? 800 : 80}>
+                    <span className="hero-line">Software built.</span>
+                    <span className="hero-line">Engineers placed.</span>
+                    <span className="hero-line">Teams trained.</span>
+                  </PixelatedHeadline>
 
                   <p className="hero-lede">
                     Production software and AI systems, screened engineers in five to seven

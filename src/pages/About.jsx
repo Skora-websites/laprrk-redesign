@@ -9,6 +9,7 @@ import { FlowButton } from "../components/ui/flow-button";
 import AboutHeroVisual from "../components/AboutHeroVisual";
 import MissionVision from "../components/MissionVision";
 import { ContainerScroll, CardSticky } from "../components/ui/cards-stack";
+import TablerIcon from "../components/TablerIcon";
 
 const PRINCIPLE_TAGS = [
   "Direct accountability · No hand-off to new teams",
@@ -35,19 +36,66 @@ export default function About() {
         }
       />
 
+      {/* Executive Story & Delivery Architecture */}
       <section className="section about-story" aria-labelledby="about-story-title">
         <div className="shell story-grid">
           <Reveal className="story-aside">
-            <h2 id="about-story-title">{ABOUT.story.title}</h2>
-            <div className="story-marker">
-              <span className="mono-sm">Founded 2019</span>
-              <p>Greater Noida · Louisville</p>
+            <span className="story-kicker">Operating Manifesto</span>
+            <h2 id="about-story-title" className="story-heading">{ABOUT.story.title}</h2>
+
+            <div className="story-arch-card">
+              <div className="story-arch-header">
+                <span className="story-arch-dot" aria-hidden="true" />
+                <span className="story-arch-label">Unified Bench vs. Agency Silos</span>
+              </div>
+              <p className="story-arch-sub">
+                Why we operate Build, Hire, and Train as one engineering team rather than three disconnected vendors.
+              </p>
+              <div className="story-arch-metrics">
+                <div className="story-metric-item">
+                  <span className="story-metric-val">0%</span>
+                  <span className="story-metric-lbl">Hand-off loss</span>
+                </div>
+                <div className="story-metric-item">
+                  <span className="story-metric-val">100%</span>
+                  <span className="story-metric-lbl">Client IP in your cloud</span>
+                </div>
+                <div className="story-metric-item">
+                  <span className="story-metric-val">48h</span>
+                  <span className="story-metric-lbl">Written proposal SLA</span>
+                </div>
+              </div>
+              <div className="story-arch-foot">
+                <span className="mono-sm">Founded 2019</span>
+                <span className="story-arch-sep">·</span>
+                <span>Greater Noida &amp; Louisville</span>
+              </div>
             </div>
           </Reveal>
+
           <Reveal className="story-copy" delay={120}>
-            {ABOUT.story.paragraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <p className="story-lead-para">{ABOUT.story.paragraphs[0]}</p>
+            <p className="story-body-para">{ABOUT.story.paragraphs[1]}</p>
+            
+            <div className="story-quote-card">
+              <div className="story-quote-bar" aria-hidden="true" />
+              <p className="story-quote-text">{ABOUT.story.paragraphs[2]}</p>
+            </div>
+
+            <div className="story-governance-strip">
+              <span className="governance-pill">
+                <TablerIcon name="check" size={15} />
+                Mutual NDA on Day One
+              </span>
+              <span className="governance-pill">
+                <TablerIcon name="check" size={15} />
+                Two-Week Demo Cadence
+              </span>
+              <span className="governance-pill">
+                <TablerIcon name="check" size={15} />
+                Direct Practitioner Contact
+              </span>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -55,6 +103,7 @@ export default function About() {
       {/* Refined Mission and Vision Section */}
       <MissionVision />
 
+      {/* Operating Standards - Stacking Cards */}
       <div className="section-tonal">
         <section className="section about-principles" aria-labelledby="principles-title">
           <div className="shell">
@@ -118,29 +167,66 @@ export default function About() {
         </section>
       </div>
 
+      {/* Practice Showcase: Architectural Practice Cards */}
       <section className="section practice-map" aria-labelledby="map-title">
         <div className="shell">
-          <Reveal className="section-head">
+          <Reveal className="section-head text-center">
+            <span className="section-kicker">Delivery Ecosystem</span>
             <h2 id="map-title">One bench, three practices.</h2>
             <div>
               <p>
-                The same senior people move between the three. Follow a practice to see the services,
-                the process and the evidence behind it.
+                The same senior people move between the three. Follow a practice to explore services,
+                delivery rhythms, and real outcome metrics.
               </p>
             </div>
           </Reveal>
 
-          <div className="map-list">
+          <div className="practice-cards-grid">
             {PRACTICES.map((practice, index) => (
-              <Reveal as="article" key={practice.id} className="map-row" delay={index * 80}>
-                <div className="map-head">
-                  <h3>{practice.name}</h3>
-                  <span className="mono-sm">{practice.meta}</span>
+              <Reveal as="article" key={practice.id} className="practice-card" delay={index * 100}>
+                <div className="practice-card-top">
+                  <div className="practice-badge-group">
+                    <span className="practice-idx">0{index + 1}</span>
+                    <span className="practice-meta-tag">{practice.meta}</span>
+                  </div>
+                  <Link to={practice.page} className="practice-corner-link" aria-label={`View ${practice.name} practice`}>
+                    <TablerIcon name="arrow-up-right" size={18} />
+                  </Link>
                 </div>
-                <p>{practice.lead}</p>
-                <Link className="link-inline" to={practice.page}>
-                  {practice.pageLabel}
-                </Link>
+
+                <div className="practice-card-heading">
+                  <h3 className="practice-title">{practice.name}</h3>
+                  <p className="practice-lead-text">{practice.lead}</p>
+                </div>
+
+                {practice.services && (
+                  <div className="practice-tags-wrap">
+                    {practice.services.slice(0, 4).map((service) => (
+                      <span key={service} className="practice-tag-chip">
+                        {service}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {practice.proof && (
+                  <div className="practice-proof-box">
+                    <div className="practice-proof-label">
+                      <span className="practice-proof-dot" aria-hidden="true" />
+                      <span>Representative Outcome</span>
+                    </div>
+                    <p className="practice-proof-quote">{practice.proof}</p>
+                  </div>
+                )}
+
+                <div className="practice-card-footer">
+                  <Link className="practice-action-link" to={practice.page}>
+                    <span>{practice.pageLabel}</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M3.333 8h9.334M8 3.333L12.667 8 8 12.667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </div>
               </Reveal>
             ))}
           </div>

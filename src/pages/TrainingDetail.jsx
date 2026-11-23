@@ -7,6 +7,7 @@ import FaqDrawer from "../components/ui/faq-drawer";
 import BottomCTA from "../components/BottomCTA";
 import HeroBackdrop from "../components/HeroBackdrop";
 import FlowButton from "../components/ui/flow-button";
+import PixelatedHeadline from "../components/ui/PixelatedHeadline";
 
 export default function TrainingDetail({ slug }) {
   const training = getTrainingData(slug);
@@ -68,9 +69,9 @@ export default function TrainingDetail({ slug }) {
                 <TablerIcon name={training.category === "For institutes" ? "school" : "brain"} size={14} />
                 <span>{training.category}</span>
               </span>
-              <h1 id="training-page-title" className="training-hero-title">
+              <PixelatedHeadline as="h1" id="training-page-title" className="training-hero-title">
                 {training.headline}
-              </h1>
+              </PixelatedHeadline>
               <p className="training-hero-lead">{training.lead}</p>
 
               <div className="training-hero-actions">

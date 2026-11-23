@@ -144,6 +144,12 @@ export default function TablerIcon({ name, className = "tabler-icon", size = 20 
       );
 
     // Quality, Security, Enterprise
+    case "check":
+      return (
+        <svg {...props}>
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      );
     case "checklist":
     case "circle-check":
       return (
@@ -307,6 +313,15 @@ export default function TablerIcon({ name, className = "tabler-icon", size = 20 
           <path d="M13.5 13.5l3 4" />
         </svg>
       );
+    case "dna":
+      return (
+        <svg {...props}>
+          <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" />
+          <path d="M9.172 20.485a4 4 0 1 0 -5.657 -5.657" />
+          <path d="M14.828 3.515a4 4 0 0 0 5.657 5.657" />
+          <line x1="7" y1="17" x2="17" y2="7" />
+        </svg>
+      );
     case "list-check":
       return (
         <svg {...props}>
@@ -388,6 +403,19 @@ export default function TablerIcon({ name, className = "tabler-icon", size = 20 
         <svg {...props}>
           <circle cx="12" cy="12" r="9" />
           <polyline points="12 7 12 12 15 15" />
+        </svg>
+      );
+    case "phone":
+      return (
+        <svg {...props}>
+          <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+        </svg>
+      );
+    case "map-pin":
+      return (
+        <svg {...props}>
+          <circle cx="12" cy="11" r="3" />
+          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
         </svg>
       );
     case "mail":

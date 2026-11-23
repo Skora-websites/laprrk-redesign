@@ -35,24 +35,87 @@ export default function Header() {
   };
 
   useEffect(() => {
-    const updateScrolled = () => {
-      const hero = document.querySelector(
-        ".hero, .page-hero, .service-hero, .hiring-hero-section, .training-hero-section"
-      );
-      if (hero) {
-        const heroRect = hero.getBoundingClientRect();
+    let heroObserver = null;
+    let mutationObserver = null;
+
+    const HERO_SELECTOR =
+      ".hero, .page-hero, .service-hero, .hiring-hero-section, .training-hero-section, #top, [class*='-hero']";
+
+    const updateScrolledFromHero = (heroEl) => {
+      if (window.scrollY <= 10) {
+        setScrolled(false);
+        return;
+      }
+      if (heroEl) {
+        const heroRect = heroEl.getBoundingClientRect();
+        // Only mark scrolled if the bottom of the hero section has scrolled past the header
         setScrolled(heroRect.bottom <= 78);
       } else {
-        setScrolled(window.scrollY > 20);
+        setScrolled(window.scrollY > 250);
       }
     };
 
-    updateScrolled();
-    window.addEventListener("scroll", updateScrolled, { passive: true });
-    window.addEventListener("resize", updateScrolled, { passive: true });
+    const attachHeroObserver = () => {
+      const hero = document.querySelector(HERO_SELECTOR);
+      if (hero) {
+        if (heroObserver) heroObserver.disconnect();
+
+        heroObserver = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting || window.scrollY <= 10) {
+              setScrolled(false);
+            } else {
+              const rect = hero.getBoundingClientRect();
+              setScrolled(rect.bottom <= 78);
+            }
+          },
+          {
+            rootMargin: "-78px 0px 0px 0px",
+            threshold: [0, 0.05, 0.2],
+          }
+        );
+
+        heroObserver.observe(hero);
+        updateScrolledFromHero(hero);
+        return true;
+      }
+      return false;
+    };
+
+    // Landing on page: ensure transparent navbar in hero immediately
+    setScrolled(window.scrollY > 200);
+
+    const found = attachHeroObserver();
+
+    // If hero not in DOM yet (e.g. React.lazy / Suspense pending chunk), watch for when it mounts
+    if (!found) {
+      const mainEl = document.getElementById("main") || document.body;
+      mutationObserver = new MutationObserver(() => {
+        if (attachHeroObserver()) {
+          mutationObserver.disconnect();
+          mutationObserver = null;
+        }
+      });
+      mutationObserver.observe(mainEl, { childList: true, subtree: true });
+    }
+
+    const onScrollOrResize = () => {
+      if (window.scrollY <= 10) {
+        setScrolled(false);
+        return;
+      }
+      const hero = document.querySelector(HERO_SELECTOR);
+      updateScrolledFromHero(hero);
+    };
+
+    window.addEventListener("scroll", onScrollOrResize, { passive: true });
+    window.addEventListener("resize", onScrollOrResize, { passive: true });
+
     return () => {
-      window.removeEventListener("scroll", updateScrolled);
-      window.removeEventListener("resize", updateScrolled);
+      if (heroObserver) heroObserver.disconnect();
+      if (mutationObserver) mutationObserver.disconnect();
+      window.removeEventListener("scroll", onScrollOrResize);
+      window.removeEventListener("resize", onScrollOrResize);
     };
   }, [path]);
 

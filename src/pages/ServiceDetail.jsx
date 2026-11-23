@@ -7,6 +7,7 @@ import FaqDrawer from "../components/ui/faq-drawer";
 import BottomCTA from "../components/BottomCTA";
 import HeroBackdrop from "../components/HeroBackdrop";
 import FlowButton from "../components/ui/flow-button";
+import PixelatedHeadline from "../components/ui/PixelatedHeadline";
 
 export default function ServiceDetail({ slug }) {
   const service = getServiceData(slug);
@@ -45,9 +46,9 @@ export default function ServiceDetail({ slug }) {
           <div className="service-hero-grid">
             <div className="service-hero-content">
               <span className="service-kicker">{service.heroKicker}</span>
-              <h1 id="service-title" className="service-headline">
+              <PixelatedHeadline as="h1" id="service-title" className="service-headline">
                 {service.headline}
-              </h1>
+              </PixelatedHeadline>
               <p className="service-lead">{service.lead}</p>
 
               <div className="service-actions">

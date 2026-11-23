@@ -21,8 +21,13 @@ export default function MissionVision() {
           {/* Mission Card */}
           <Reveal className="mission-card card-mission" delay={60}>
             <div className="mission-card-badge">
-              <span className="mono-sm">01 · Mission</span>
-              <TablerIcon name="target" size={18} />
+              <span className="mission-badge-pill">
+                <span className="mission-badge-dot" aria-hidden="true" />
+                <span className="mono-sm">01 · Mission</span>
+              </span>
+              <div className="mission-badge-icon" aria-hidden="true">
+                <TablerIcon name="target" size={18} />
+              </div>
             </div>
 
             <h3 className="mission-card-title">
@@ -38,15 +43,21 @@ export default function MissionVision() {
 
             <ul className="mission-card-points">
               <li>
-                <TablerIcon name="check" size={16} />
+                <div className="mission-point-icon" aria-hidden="true">
+                  <TablerIcon name="check" size={14} />
+                </div>
                 <span>Two-week sprints with working demo at every cadence</span>
               </li>
               <li>
-                <TablerIcon name="check" size={16} />
+                <div className="mission-point-icon" aria-hidden="true">
+                  <TablerIcon name="check" size={14} />
+                </div>
                 <span>100% repositories and CI/CD pipelines in your cloud accounts</span>
               </li>
               <li>
-                <TablerIcon name="check" size={16} />
+                <div className="mission-point-icon" aria-hidden="true">
+                  <TablerIcon name="check" size={14} />
+                </div>
                 <span>Mutual NDA before reviewing sensitive architecture</span>
               </li>
             </ul>
@@ -55,8 +66,13 @@ export default function MissionVision() {
           {/* Vision Card */}
           <Reveal className="mission-card card-vision" delay={120}>
             <div className="mission-card-badge">
-              <span className="mono-sm">02 · Vision</span>
-              <TablerIcon name="compass" size={18} />
+              <span className="mission-badge-pill">
+                <span className="mission-badge-dot" aria-hidden="true" />
+                <span className="mono-sm">02 · Vision</span>
+              </span>
+              <div className="mission-badge-icon" aria-hidden="true">
+                <TablerIcon name="compass" size={18} />
+              </div>
             </div>
 
             <h3 className="mission-card-title">
@@ -71,15 +87,21 @@ export default function MissionVision() {
 
             <ul className="mission-card-points">
               <li>
-                <TablerIcon name="check" size={16} />
+                <div className="mission-point-icon" aria-hidden="true">
+                  <TablerIcon name="check" size={14} />
+                </div>
                 <span>Continuous capability growth with ~70% hands-on lab time</span>
               </li>
               <li>
-                <TablerIcon name="check" size={16} />
+                <div className="mission-point-icon" aria-hidden="true">
+                  <TablerIcon name="check" size={14} />
+                </div>
                 <span>First calibrated candidate shortlist delivered in 5–7 business days</span>
               </li>
               <li>
-                <TablerIcon name="check" size={16} />
+                <div className="mission-point-icon" aria-hidden="true">
+                  <TablerIcon name="check" size={14} />
+                </div>
                 <span>38% average measured lift in technical assessment benchmarks</span>
               </li>
             </ul>
@@ -89,36 +111,57 @@ export default function MissionVision() {
         {/* 3 Core Architectural Pillars */}
         <div className="mission-pillars-row">
           <Reveal className="mission-pillar" delay={80}>
-            <div className="pillar-icon-wrap">
-              <TablerIcon name="user-check" size={20} />
+            <div className="pillar-top-bar">
+              <div className="pillar-icon-wrap" aria-hidden="true">
+                <TablerIcon name="user-check" size={20} />
+              </div>
+              <span className="pillar-kicker">Scope Continuity</span>
             </div>
             <h4>Practitioner-Led Accountability</h4>
             <p>
               The senior lead who scopes your proposal stays with the engagement. There is no
               hand-off to a secondary delivery manager you meet after signing.
             </p>
+            <div className="pillar-foot-tag">
+              <span className="pillar-tag-dot" aria-hidden="true" />
+              <span>Zero Account Relays</span>
+            </div>
           </Reveal>
 
           <Reveal className="mission-pillar" delay={140}>
-            <div className="pillar-icon-wrap">
-              <TablerIcon name="dna" size={20} />
+            <div className="pillar-top-bar">
+              <div className="pillar-icon-wrap" aria-hidden="true">
+                <TablerIcon name="dna" size={20} />
+              </div>
+              <span className="pillar-kicker">Single Standard</span>
             </div>
             <h4>Unified Bench DNA</h4>
             <p>
               Our code reviewers teach labs, our trainers ship production software, and our
               technical interviewers have deployed the same tech stacks in production.
             </p>
+            <div className="pillar-foot-tag">
+              <span className="pillar-tag-dot" aria-hidden="true" />
+              <span>Full Cross-Stack Competency</span>
+            </div>
           </Reveal>
 
           <Reveal className="mission-pillar" delay={200}>
-            <div className="pillar-icon-wrap">
-              <TablerIcon name="shield-check" size={20} />
+            <div className="pillar-top-bar">
+              <div className="pillar-icon-wrap" aria-hidden="true">
+                <TablerIcon name="shield-check" size={20} />
+              </div>
+              <span className="pillar-kicker">Client Sovereignty</span>
             </div>
             <h4>Direct IP Hygiene</h4>
             <p>
               Repositories, cloud accounts, architectural diagrams, and documentation remain 100%
               yours. Complete IP assignment is guaranteed in writing.
             </p>
+            <div className="pillar-foot-tag">
+              <span className="pillar-tag-dot" aria-hidden="true" />
+              <span>100% In-Cloud Ownership</span>
+            </div>
           </Reveal>
         </div>
       </div>

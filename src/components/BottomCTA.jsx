@@ -1,6 +1,7 @@
 import { BOTTOM_CTA, CONTACT } from "../data/site";
 import { useBooking } from "../booking";
 import { FlowButton } from "./ui/flow-button";
+import Reveal from "./Reveal";
 
 export default function BottomCTA({ topic, prefill } = {}) {
   const { openBooking } = useBooking();
@@ -10,7 +11,7 @@ export default function BottomCTA({ topic, prefill } = {}) {
     <section className="bottom-cta" aria-labelledby="bottom-cta-title">
       <div className="shell">
         <div className="cta-panel">
-          <div className="cta-copy">
+          <Reveal className="cta-copy">
             <h2 id="bottom-cta-title">{title}</h2>
             <p>{body}</p>
             <div className="cta-actions">
@@ -28,7 +29,7 @@ export default function BottomCTA({ topic, prefill } = {}) {
               />
             </div>
             <p className="cta-note">{note}</p>
-          </div>
+          </Reveal>
 
           <div className="cta-dial" aria-hidden="true">
             <span className="cta-dial-ring cta-dial-ring-outer" />

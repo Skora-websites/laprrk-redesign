@@ -9,6 +9,7 @@ import Timeline from "../components/ui/timeline";
 import BottomCTA from "../components/BottomCTA";
 import HeroBackdrop from "../components/HeroBackdrop";
 import FlowButton from "../components/ui/flow-button";
+import PixelatedHeadline from "../components/ui/PixelatedHeadline";
 
 function getNormalizedMatrix(rawMatrix, hiringTitle) {
   if (!rawMatrix || !Array.isArray(rawMatrix)) return [];
@@ -158,9 +159,9 @@ export default function HiringDetail({ slug }) {
                 <TablerIcon name={hiring.category === "Roles we recruit" ? "cpu" : "user-check"} size={14} />
                 <span>{hiring.category}</span>
               </span>
-              <h1 id="hiring-page-title" className="hiring-hero-title">
+              <PixelatedHeadline as="h1" id="hiring-page-title" className="hiring-hero-title">
                 {hiring.headline}
-              </h1>
+              </PixelatedHeadline>
               <p className="hiring-hero-lead">{hiring.lead}</p>
 
               <div className="hiring-hero-actions">
@@ -503,45 +504,6 @@ export default function HiringDetail({ slug }) {
           </div>
         </div>
       </section>
-
-      {/* SECTION 5: VERIFIED PLACEMENT CASE STUDY */}
-      {hiring.caseStudy && (
-        <section className="hiring-case-section" aria-labelledby="hiring-case-title">
-          <div className="shell">
-            <Reveal className="hiring-case-card">
-              <div className="hiring-case-header">
-                <span className="hiring-case-tag">Verified Engagement Study</span>
-                <h2 id="hiring-case-title" className="hiring-case-client">
-                  {hiring.caseStudy.client}
-                </h2>
-              </div>
-              <div className="hiring-case-grid">
-                <div className="hiring-case-narrative">
-                  <div className="narrative-block">
-                    <span className="narrative-label">The Challenge</span>
-                    <p>{hiring.caseStudy.challenge}</p>
-                  </div>
-                  <div className="narrative-block">
-                    <span className="narrative-label">Practitioner Solution</span>
-                    <p>{hiring.caseStudy.solution}</p>
-                  </div>
-                </div>
-                <div className="hiring-case-results">
-                  <span className="results-label">Verified Results</span>
-                  <div className="results-chips">
-                    {hiring.caseStudy.results?.map((res, rIdx) => (
-                      <div key={rIdx} className="result-chip">
-                        <span className="result-chip-num">{res.num}</span>
-                        <span className="result-chip-label">{res.label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-      )}
 
       {/* SECTION 6: FAQ ACCORDION DRAWER */}
       {hiring.faqs && hiring.faqs.length > 0 && (

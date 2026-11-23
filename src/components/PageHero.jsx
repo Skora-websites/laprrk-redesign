@@ -1,5 +1,6 @@
 import { Link } from "../router";
 import HeroBackdrop from "./HeroBackdrop";
+import PixelatedHeadline from "./ui/PixelatedHeadline";
 
 export default function PageHero({ crumb, title, lead, facts = [], actions, visual, children }) {
   return (
@@ -16,7 +17,7 @@ export default function PageHero({ crumb, title, lead, facts = [], actions, visu
 
         <div className="page-hero-body">
           <div className="page-hero-copy">
-            <h1 id="page-title">{title}</h1>
+            <PixelatedHeadline as="h1" id="page-title">{title}</PixelatedHeadline>
             <p className="page-hero-lead">{lead}</p>
             {actions && <div className="page-hero-actions">{actions}</div>}
           </div>
