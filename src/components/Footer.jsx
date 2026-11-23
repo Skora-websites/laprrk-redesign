@@ -32,7 +32,12 @@ export default function Footer() {
                     <path d="M7.6 6.7c.3-.1.6 0 .8.3l.7 1.2c.1.2.1.5-.1.6l-.5.5c.5 1 1.4 1.9 2.5 2.4l.5-.5c.2-.2.4-.2.6-.1l1.2.7c.2.2.4.4.3.7-.2.8-.9 1.4-1.7 1.4-2.7-.2-5-2.5-5.2-5.2 0-.8.5-1.5 1.3-1.7" fill="currentColor" />
                   </svg>
                 </a>
-                <a href={`mailto:${CONTACT.email}`} aria-label={`Email ${CONTACT.email}`}>
+                <a
+                  href={CONTACT.gmailCompose || `mailto:${CONTACT.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Email ${CONTACT.email} via Gmail`}
+                >
                   <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
                     <rect x="2.6" y="4.4" width="14.8" height="11.2" rx="2" stroke="currentColor" strokeWidth="1.3" />
                     <path d="M3.4 5.6L10 10.5l6.6-4.9" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
@@ -48,7 +53,7 @@ export default function Footer() {
               <div className="footer-socials" aria-label="Official Social Channels">
                 <span className="footer-socials-label">Follow us</span>
                 <div className="footer-socials-list">
-                  {SOCIAL_LINKS.map((item) => (
+                  {SOCIAL_LINKS.filter((item) => item.name !== "Gmail").map((item) => (
                     <a
                       key={item.name}
                       href={item.href}

@@ -2,6 +2,7 @@ export const CONTACT = {
   waNumber: "918860664929",
   waBase: "https://wa.me/918860664929",
   email: "info@laprrk.com",
+  gmailCompose: "https://mail.google.com/mail/?view=cm&fs=1&to=info@laprrk.com",
   phoneIN: "+91 88606 64929",
   telIN: "+918860664929",
   phoneUS: "+1 (502) 309-5749",
@@ -24,9 +25,9 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "Facebook",
-    handle: "Laprrk Associates",
-    label: "Laprrk Associates | Greater Noida | Facebook",
-    href: "https://www.facebook.com/LaprrkAssociates",
+    handle: "Laprrk Technology Solutions",
+    label: "Laprrk Technology Solutions | Greater Noida | Facebook",
+    href: "https://www.facebook.com/laprrktechnologysolutions/",
     icon: "brand-facebook",
   },
   {
@@ -38,9 +39,9 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "YouTube",
-    handle: "@LaprrkAssociates",
-    label: "Laprrk Associates - YouTube",
-    href: "https://www.youtube.com/@LaprrkAssociates",
+    handle: "@laprrktechnologysolutions",
+    label: "LAPRRK TECHNOLOGY SOLUTIONS - YouTube",
+    href: "https://www.youtube.com/@laprrktechnologysolutions",
     icon: "brand-youtube",
   },
   {
@@ -49,13 +50,6 @@ export const SOCIAL_LINKS = [
     label: "Laprrk Technology Solutions – Profile | Pinterest",
     href: "https://in.pinterest.com/laprrktechnologysolutions/",
     icon: "brand-pinterest",
-  },
-  {
-    name: "Gmail",
-    handle: "info@laprrk.com",
-    label: "Email Laprrk at info@laprrk.com",
-    href: "mailto:info@laprrk.com",
-    icon: "brand-gmail",
   },
 ];
 
